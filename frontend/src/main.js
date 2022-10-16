@@ -1,0 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import * as uiv from 'uiv'
+
+
+createApp(App)
+.use(uiv)
+.mount('#app')
