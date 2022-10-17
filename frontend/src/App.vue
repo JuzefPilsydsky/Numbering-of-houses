@@ -5163,13 +5163,9 @@ export default {
         },
 
         validateNumbers(number) {
-            return number == number.match(/[0-9]{0,3}[\/,-][0-9]{0,3}\d/) || number == number.match(/[0-9]{0,3}[а-я][\/,-][0-9]{0,3}\d/);
+            return number == number.match(/[1-9](?:[0-9]{0,3})(?:[а-яА-Я])?(?:[\/,-][1-9](?:[0-9]{0,3})(?:[а-яА-Я])?)?/g);
         },
-
-
     },
-
-
 }
 
 </script>
